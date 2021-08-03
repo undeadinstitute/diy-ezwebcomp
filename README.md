@@ -1,5 +1,4 @@
-# diy-ezwebcomp
-Do It Yourself Wordpress Web Components are Easier Than You Think
+# Do It Yourself - Easy Web Components for WordPress
 
 How to use this template
 
