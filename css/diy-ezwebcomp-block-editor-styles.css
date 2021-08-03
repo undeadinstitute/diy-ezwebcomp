@@ -1,0 +1,9 @@
+#editor .pic img {
+	max-width: 300px;
+	height: 300px;
+}
+
+#editor .pic button.components-button {
+	overflow: visible;
+	height: auto;
+}
