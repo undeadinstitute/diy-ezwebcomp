@@ -34,10 +34,10 @@ function diy_ezwebcomp_footer()
 }
 add_action('wp_footer', 'diy_ezwebcomp_footer');
 
-wp_enqueue_script($webcompname . '_js', $path2js, '', '1.0', true);
+wp_enqueue_script($webcompname . '_js', plugins_url($path2js, __FILE__), '', '1.0', true);
 
 if ($path2style) {
-  wp_enqueue_style($webcompname . '_style', $path2style, '', '1.0', 'screen');
+  wp_enqueue_style($webcompname . '_style', plugins_url($path2style, __FILE__), '', '1.0', 'screen');
 }
 
 function add_diy_ezwebcomp_to_kses_allowed($the_allowed_tags)
@@ -60,14 +60,14 @@ function diy_ezwebcomp_register_block()
   //Enqueues the JavaScript needed to build the custom block
   wp_register_script(
     'diy-ezwebcomp',
-    plugins_url('diy-ezwebcomp-block.js', __FILE__),
+    plugins_url('js/diy-ezwebcomp-block.js', __FILE__),
     array('wp-blocks', 'wp-element', 'wp-editor'),
     filemtime(plugin_dir_path(__FILE__) . 'js/diy-ezwebcomp-block.js')
   );
   //Enqueues the CSS file for anything you need in the editor
   wp_register_style(
     'diy-ezwebcomp',
-    plugins_url('diy-ezwebcomp-block-editor-style.css', __FILE__),
+    plugins_url('css/iy-ezwebcomp-block-editor-styles.css', __FILE__),
     array(),
     filemtime(plugin_dir_path(__FILE__) . 'css/diy-ezwebcomp-block-editor-styles.css')
   );
