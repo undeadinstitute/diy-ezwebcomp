@@ -1,7 +1,7 @@
 <?php
 /*
 Plugin Name: DIY EZ Web Components
-Plugin URI:  https://undead.institute/diy-ez-web-components/
+Plugin URI:  https://github.com/undeadinstitute/diy-ezwebcomp
 Description: Easily Add Web Components to Your WordPress Site
 Version:     1.0.0
 Author:      John Rhea
