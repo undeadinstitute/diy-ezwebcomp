@@ -46,7 +46,6 @@ function add_diy_ezwebcomp_to_kses_allowed($the_allowed_tags)
   $the_allowed_tags[$webcompname] = array();
   foreach ($the_allowed_tags as &$tag) {
     $tag['slot'] = true;
-    $tag['part'] = true;
   }
   return $the_allowed_tags;
 }
