@@ -2,7 +2,7 @@
 
 How to use this template
 
-1. Set the $webcompname variable to your web component's name e.g. zombie-profile for <zombie-profile></zombie-profile>
+1. Set the $webcompname variable to your web component's name e.g. zombie-profile for `<zombie-profile></zombie-profile>`
 2. Put your JavaScript in the diy-ezwebcomp.js file. Or change $path2js to the path to your js file
 3. Put any global CSS in the diy-ezwebcomp.css file. If not using it, set $path2style to false.
 4. Paste your HTML Template content into the diy_ezwebcomp_footer() function.
