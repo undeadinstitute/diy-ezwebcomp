@@ -67,7 +67,7 @@ function diy_ezwebcomp_register_block()
   //Enqueues the CSS file for anything you need in the editor
   wp_register_style(
     'diy-ezwebcomp',
-    plugins_url('css/iy-ezwebcomp-block-editor-styles.css', __FILE__),
+    plugins_url('css/diy-ezwebcomp-block-editor-styles.css', __FILE__),
     array(),
     filemtime(plugin_dir_path(__FILE__) . 'css/diy-ezwebcomp-block-editor-styles.css')
   );
